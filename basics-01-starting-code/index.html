@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@3" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vue Course Goals</h1>
+    </header>
+    <section id="user-goal">
+      <h2>My Course Goal</h2>
+   
+      <!-- <p>{{ outputGoal() }}</p>
+      <p>Read more info about <a v-bind:href="marketLink">market</a> near ur home</p> -->
+
+      <p>Song of the day: {{ song }}</p>
+      <p>Learn more about <a v-bind:href="link">Harvard course</a></p><hr>
+      <!-- методы можно выводить как со скобками, так и без скобок -->
+      <p>Random emoji: {{ randomSign }}</p><hr>
+   
+      <button v-on:click="increase(10)">Increase by 10</button>
+      <button v-on:click="increase(1)">Increase by 1</button>
+      <!-- настройка конкретной кнопки мыши для взаимодействия -->
+      <button v-on:click.right="decrease(1)">Decrease by 1</button>
+      <button v-on:click.right="decrease(10)">Decrease by 10</button>
+      <p>Current value = {{ counterValue }}</p>
+      <p v-once>Fixed v-once value = {{ counterValue }}</p><hr>
+
+      <!-- v-on === @ -->
+       <!-- v-bind === : -->
+      <input
+      type="text"
+      v-model="name"
+      placeholder="Name"
+      @keyup.enter="confirmName()"
+      >
+      <input
+      type="text"
+      v-model="lastname"
+      placeholder="Surname"
+      @keyup.enter="confirmName()"
+      >
+      <button @click="resetName()">Reset</button>
+      <p>Your name is {{ fullname }}</p><hr>
+    
+      <form @submit.prevent="submitForm()">
+        <input type="text">
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

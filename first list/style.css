@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  padding: 7px;
+}
+#global {
+  margin: 3rem auto;
+  max-width: 40rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.304);
+  padding: 15px 20px;
+}
+label,
+input {
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 100%;
+}
+label {
+  font-weight: bold;
+}
+input {
+  padding: 3px 5px;
+}
+ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+li {
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+}
