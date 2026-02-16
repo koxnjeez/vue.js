@@ -33,7 +33,7 @@ export default {
       const inputId = event.target.id;
       const isChecked = event.target.checked;
       const updatedFilters = {
-        ...this.filters, // копировние всех элементов фильтра в новый массив
+        ...this.filters, // ... обеспечивает КОПИРОВАНИЕ всех элементов фильтра в новый массив
         [inputId]: isChecked,
       };
       this.filters = updatedFilters;
@@ -65,3 +65,4 @@ h2 {
   font-weight: bold;
 }
 </style>
+
