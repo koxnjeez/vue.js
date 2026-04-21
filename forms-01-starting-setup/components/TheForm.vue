@@ -24,15 +24,15 @@
         <option value="newspaper">Newspaper</option>
       </select>
     </div>
-    <div class="form-control">
+    <div class="form-control" <!-- множественный выбор среди категорий (checkboxов) -->
       <h2>What are you interested in?</h2>
       <div>
         <input
           id="interest-news"
           name="interest"
           type="checkbox"
-          value="news"
-          v-model="interests"
+          value="news" <!-- разные значения для идентификации конкретных -->
+          v-model="interests" <!-- одна категория у всех checkboxов -->
         />
         <label for="interest-news">News</label>
       </div>
