@@ -1,7 +1,8 @@
 <template>
   <section>
     <base-card>
-      <template #header> <!-- v-slot в сочетании со slot внутри файла дизайна определенного элемента
+      <template #header> <!-- #header = v-slot="header"
+        v-slot в сочетании со slot внутри файла дизайна определенного элемента
        позволяет сделать несколько областей куда нужно занести верстку -->
         <h3>{{ fullName }}</h3>
         <base-badge :type="role" :caption="role.toUpperCase()"></base-badge>
