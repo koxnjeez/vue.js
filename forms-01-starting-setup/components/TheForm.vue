@@ -33,7 +33,7 @@
           type="checkbox"
           value="news"
           v-model="interests"
-        /> <!-- одна категория у всех checkboxов но разные значения для идентификации конкретных -->
+        /> <!-- одна категория у всех checkboxов, но разные значения для идентификации конкретных -->
         <label for="interest-news">News</label>
       </div>
       <div>
