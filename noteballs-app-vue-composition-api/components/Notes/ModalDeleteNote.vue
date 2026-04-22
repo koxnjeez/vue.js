@@ -73,7 +73,7 @@ const closeModal = () => {
 
 onClickOutside(deleteModalCardRef, closeModal);
 
-// keyboard
+// keyboard (закрытие по нажатию Esc)
 
 const handleKeybord = (e) => {
   if (e.key === "Escape") closeModal();
