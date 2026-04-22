@@ -34,7 +34,7 @@ const goHomeTimer = () => {
 
 const goToFirstPost = () => {
   router.push({
-    // можно пропушить адрес вместе с id как параметр
+    // пуш/push адреса вместе с id как параметр
     name: "postDetail",
     params: {
       id: "id1",
